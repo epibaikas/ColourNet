@@ -8,3 +8,5 @@ web server and controlling the display's LED strip.
 
 In main.py, a 3x3x2 Fully Connected neural network model is created and trained using the PyTorch framework. At the end
 of each training epoch, an HTTP Post request is made to the web server to update the colour of the network weights.
+
+<img src="neural_net_display.png" width="1000">
