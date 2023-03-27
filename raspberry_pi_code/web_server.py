@@ -48,7 +48,7 @@ input_layer_leds = [node_leds['node_0'], node_leds['node_1'], node_leds['node_2'
 hidden_layer_leds = [node_leds['node_3'], node_leds['node_4'], node_leds['node_5']]
 output_layer_leds = [node_leds['node_6'], node_leds['node_7']]
 
-delay = 0.05
+delay = 0.08
 
 
 def set_colour_of_scattered_leds(led_idx, colour):
@@ -72,7 +72,7 @@ def update_led_strip(weight_colours):
     sleep(delay)
     set_colour_of_scattered_leds(output_layer_leds, (255, 255, 255))
     sleep(delay)
-    set_colour_of_scattered_leds(input_layer_leds, (255, 255, 255))
+    set_colour_of_scattered_leds(hidden_layer_leds, (255, 255, 255))
     sleep(delay)
     set_colour_of_scattered_leds(input_layer_leds, (255, 255, 255))
     sleep(delay)
